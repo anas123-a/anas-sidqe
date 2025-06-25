@@ -6,12 +6,8 @@
   <title>ئاناس سیدقە - ماڵپەڕی کەسی</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    /* Your original CSS — unchanged */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Noto Naskh Arabic', serif;
       background: linear-gradient(to bottom, #000000, #111111);
@@ -19,8 +15,6 @@
       text-align: center;
       overflow-x: hidden;
     }
-
-    /* Intro Screen */
     .intro-screen {
       position: fixed;
       top: 0; left: 0;
@@ -33,14 +27,12 @@
       z-index: 1000;
       transition: opacity 0.5s;
     }
-
     .intro-screen h1 {
       color: #0db596;
       font-size: 24px;
       margin-bottom: 20px;
       padding: 0 20px;
     }
-
     .enter-btn {
       padding: 12px 25px;
       font-size: 18px;
@@ -52,13 +44,10 @@
       transition: all 0.3s;
       font-family: 'Noto Naskh Arabic', serif;
     }
-
     .enter-btn:hover {
       background: #00bfa6;
       transform: scale(1.05);
     }
-
-    /* Main Content */
     #main-content {
       display: none;
       padding: 20px;
@@ -66,12 +55,10 @@
       z-index: 1;
       animation: fadeIn 1s;
     }
-
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
-
     .profile-img {
       width: 160px;
       height: 160px;
@@ -82,24 +69,17 @@
       box-shadow: 0 0 25px rgba(0, 255, 209, 0.5);
       transition: transform 0.3s;
     }
-
-    .profile-img:hover {
-      transform: scale(1.05);
-    }
-
+    .profile-img:hover { transform: scale(1.05); }
     h1.name {
       margin: 15px 0;
       font-size: 28px;
       color: #00ffd1;
       text-shadow: 0 0 10px rgba(0, 255, 209, 0.3);
     }
-
-    /* Link Buttons */
     .link-container {
       margin: 25px auto;
       max-width: 400px;
     }
-
     .link-button {
       display: block;
       margin: 0 auto 15px;
@@ -115,21 +95,17 @@
       border: 2px solid #00ffd1;
       backdrop-filter: blur(5px);
     }
-
     .link-button:hover {
       background: rgba(0, 255, 209, 0.4);
       transform: translateY(-3px);
       box-shadow: 0 5px 15px rgba(0, 255, 209, 0.3);
     }
-
     .description {
       color: #a0a0a0;
       font-size: 14px;
       margin-top: 5px;
       line-height: 1.5;
     }
-
-    /* Audio Controls */
     .audio-controls {
       position: fixed;
       bottom: 20px;
@@ -140,7 +116,6 @@
       border-radius: 50%;
       display: block;
     }
-
     .audio-btn {
       background: none;
       border: none;
@@ -155,12 +130,9 @@
       border-radius: 50%;
       transition: all 0.3s;
     }
-
     .audio-btn:hover {
       background: rgba(0, 255, 209, 0.2);
     }
-
-    /* Snow Effect */
     canvas#snowCanvas {
       position: fixed;
       top: 0;
@@ -168,26 +140,11 @@
       pointer-events: none;
       z-index: 0;
     }
-
-    /* Responsive */
     @media (max-width: 600px) {
-      .profile-img {
-        width: 140px;
-        height: 140px;
-      }
-      
-      h1.name {
-        font-size: 24px;
-      }
-      
-      .link-button {
-        font-size: 16px;
-        padding: 12px;
-      }
-      
-      .intro-screen h1 {
-        font-size: 20px;
-      }
+      .profile-img { width: 140px; height: 140px; }
+      h1.name { font-size: 24px; }
+      .link-button { font-size: 16px; padding: 12px; }
+      .intro-screen h1 { font-size: 20px; }
     }
   </style>
 </head>
@@ -201,42 +158,32 @@
 
   <!-- Main Content -->
   <div id="main-content">
-    <img src="c:\Users\anasr\Downloads\anas.jpg" alt="وێنەی من" class="profile-img" id="profileImage">
+    <img src="anas.jpg" alt="وێنەی من" class="profile-img" id="profileImage">
     <h1 class="name">ئاناس سیدقە</h1>
 
     <!-- Social Links -->
     <div class="link-container">
-      <a class="link-button" href="https://t.me/anas_sheladze" target="_blank">
-        <span>📨</span> تێلێگرام
-      </a>
+      <a class="link-button" href="https://t.me/anas_sheladze" target="_blank">📨 تێلێگرام</a>
       <p class="description">"پەیوەندی و گفتوگۆ لە تێلێگرام"</p>
     </div>
 
     <div class="link-container">
-      <a class="link-button" href="https://wa.me/07507675636" target="_blank">
-        <span>📞</span> واتسئاپ
-      </a>
+      <a class="link-button" href="https://wa.me/07507675636" target="_blank">📞 واتسئاپ</a>
       <p class="description">"پەیوەندی بەڕاستەوخۆ بکە لە واتسئاپ"</p>
     </div>
 
     <div class="link-container">
-      <a class="link-button" href="viber://chat?number=07507675636" target="_blank">
-        <span>📱</span> ڤایبەر
-      </a>
+      <a class="link-button" href="viber://chat?number=07507675636" target="_blank">📱 ڤایبەر</a>
       <p class="description">"پەیوەندی بکە بە ڤایبەر"</p>
     </div>
 
     <div class="link-container">
-      <a class="link-button" href="https://instagram.com/anas_sidqe" target="_blank">
-        <span>📷</span> ئینستاگرام
-      </a>
+      <a class="link-button" href="https://instagram.com/anas_sidqe" target="_blank">📷 ئینستاگرام</a>
       <p class="description">"سەیرکردنی ژیانی ڕۆژانەی من"</p>
     </div>
 
     <div class="link-container">
-      <a class="link-button" href="https://snapchat.com/add/anas_sidqe" target="_blank">
-        <span>👻</span> سناپچات
-      </a>
+      <a class="link-button" href="https://snapchat.com/add/anas_sidqe" target="_blank">👻 سناپچات</a>
       <p class="description">"ناوی من لە سناپچات: @anas_snap"</p>
     </div>
   </div>
@@ -248,7 +195,7 @@
 
   <!-- Background Audio -->
   <audio id="bgMusic" loop>
-    <source src="c:\Users\anasr\Downloads\IMG_4711.mp3" type="audio/mp3">
+    <source src="IMG_4711.mp3" type="audio/mp3">
     براوسەرەکەت پشتیوانی لە مۆسیقا ناکات
   </audio>
 
@@ -256,29 +203,21 @@
   <canvas id="snowCanvas"></canvas>
 
   <script>
-    // Initialize variables
     const bgMusic = document.getElementById('bgMusic');
     const musicToggle = document.getElementById('musicToggle');
     let isMusicPlaying = false;
-    
-    // Set initial volume
+
     bgMusic.volume = 0.3;
 
-    // Enter Site Function
     document.getElementById('enterButton').addEventListener('click', function() {
-      // Start playing music immediately on button click
-      bgMusic.play()
-        .then(() => {
-          isMusicPlaying = true;
-          musicToggle.textContent = '🔊';
-        })
-        .catch(error => {
-          console.log("Autoplay prevented:", error);
-          isMusicPlaying = false;
-          musicToggle.textContent = '🔇';
-        });
+      bgMusic.play().then(() => {
+        isMusicPlaying = true;
+        musicToggle.textContent = '🔊';
+      }).catch(error => {
+        console.log("Autoplay prevented:", error);
+        musicToggle.textContent = '🔇';
+      });
 
-      // Transition to main content
       document.getElementById('intro').style.opacity = '0';
       setTimeout(() => {
         document.getElementById('intro').style.display = 'none';
@@ -286,39 +225,34 @@
       }, 500);
     });
 
-    // Music Toggle Control
     musicToggle.addEventListener('click', function() {
       if (isMusicPlaying) {
         bgMusic.pause();
         musicToggle.textContent = '🔇';
       } else {
-        bgMusic.play()
-          .then(() => {
-            musicToggle.textContent = '🔊';
-          })
-          .catch(error => {
-            console.log("Playback failed:", error);
-          });
+        bgMusic.play().then(() => {
+          musicToggle.textContent = '🔊';
+        }).catch(error => {
+          console.log("Playback failed:", error);
+        });
       }
       isMusicPlaying = !isMusicPlaying;
     });
 
-    // Snow Effect
     const canvas = document.getElementById('snowCanvas');
     const ctx = canvas.getContext('2d');
-    
+
     function resizeCanvas() {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     }
-    
+
     window.addEventListener('resize', resizeCanvas);
     resizeCanvas();
 
     const snowflakes = [];
     const snowflakeCount = 150;
 
-    // Create snowflakes
     for (let i = 0; i < snowflakeCount; i++) {
       snowflakes.push({
         x: Math.random() * canvas.width,
@@ -332,31 +266,26 @@
 
     function drawSnowflakes() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
       for (const flake of snowflakes) {
         ctx.beginPath();
         ctx.arc(flake.x, flake.y, flake.radius, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(255, 255, 255, ${flake.opacity})`;
         ctx.fill();
-        
         flake.y += flake.speed;
         flake.x += flake.wind;
-        
         if (flake.y > canvas.height) {
           flake.y = -10;
           flake.x = Math.random() * canvas.width;
         }
-        
         if (flake.x > canvas.width + 5) flake.x = -5;
         if (flake.x < -5) flake.x = canvas.width + 5;
       }
-      
       requestAnimationFrame(drawSnowflakes);
     }
 
     drawSnowflakes();
 
-    // Fallback for profile image
+    // Fallback for image
     document.getElementById('profileImage').onerror = function() {
       this.src = 'https://via.placeholder.com/160x160/333333/00ffd1?text=ئاناس';
       this.alt = 'وێنەی پلەیسهۆڵدەر';
